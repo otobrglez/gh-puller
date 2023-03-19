@@ -20,6 +20,11 @@ scala-cli --power package --native . -o gh-puller -f \
   --maintainer "Oto Brglez"
 ```
 
+## Notes
+
+- Scala Native compilation can be a bit slow. To speedup the development process I've wrote a [curl_requests.c](./curl_requests.c) in pair with [curl_requests_test.c](./curl_requests_test.c). Meaning that you can compile and run your C code independently of Scala (Native) build process.
+- The [curl_requests.c](./curl_requests.c) code is likely "leaky" as it doesen't release memory after the "c strings" are returned from C code to Scala context. Additional work is needed to get that goin'
+
 ## Resources
 - https://tech.ovoenergy.com/scala-native-webserver/
 - https://www.baeldung.com/scala/native-apps-scala-native
