@@ -6,7 +6,7 @@
 
 ## Development
 
-The easies way to get started with this project is to install [`nix-shell`][nix-shell] and then install [Scala CLI][scala-cli] and other dependencies, such as [`libcurl`][libcurl] with it.
+The easies way to get started with this project is to install [`nix-shell`][nix-shell] ([`shell.nix`](./shell.nix)) and then install [Scala CLI][scala-cli] and other dependencies, such as [`libcurl`][libcurl] with it.
 
 ```bash
 nix-shell --pure ./shell.nix
