@@ -1,6 +1,10 @@
 # gh-puller
 
-App that pulls events from Github "Events" API endpoints.
+CLI application that pulls events from Github "Events" API endpoints written in Scala 3 with Scala Native and some C.
+
+⚠️ This is highly experimental project!
+
+- [Oto Brglez](https://twitter.com/otobrglez)
 
 ## Development
 
